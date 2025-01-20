@@ -8,7 +8,7 @@
 			SELECT mid,name,age,address FROM member where mid=#{mid} and mpw=password(#{mpw});
 		</select>
 		<select id="memberList" resultType="memb">
-			SELECT mid,name,age,address FROM member;
-		</select>
+		SELECT mid,name,age,address FROM member;
+	</select>
 </mapper>
 
