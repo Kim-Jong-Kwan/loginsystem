@@ -17,7 +17,7 @@ public class MemberDAOImpl implements MemberDAO{
 		int res = session.insert("memberMapper.signup",member);
 		System.out.println("회원가입DAO:"+res);
 		// TODO Auto-generated method stub
-		return 0;
+		return res;
 	}
 
 	@Override
