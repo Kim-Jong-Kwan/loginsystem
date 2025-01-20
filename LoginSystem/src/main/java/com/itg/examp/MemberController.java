@@ -32,11 +32,12 @@ public class MemberController {
 		}
 		int res = dao.signupMember(member);
 		if(res==1) {
+			member.setMpw("");
 			hm.put("message", "회원가입성공");
 			hm.put("data", member);
 			System.out.println(member.getName()+"회원 가입성공");
 		}else {
-			hm.put("message", "회원가입실패 관리하세요");
+			hm.put("message", "회원가입실패 관리자 문의");
 			System.out.println("회원가입실패");
 		}
 		return hm;
