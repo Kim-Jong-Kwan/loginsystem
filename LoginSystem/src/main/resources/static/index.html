@@ -40,6 +40,7 @@
 		})
 		//공통모듈 분리대상		
 		$("#signin").on("click",async()=>{
+			
 			let data = await login($("#mid").val(),$("#mpw").val())			
 			if(data.message=="로그인성공"){
 				$("#signinContain").html(`
